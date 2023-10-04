@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        max-width: 100%;
+        overflow-x: hidden;
+        background-color: #eaeaea;
+        color: #111;
+      }
+      button {
+        background-color: brown;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #ccc;
+        color: brown;
+      }
+      img:hover,
+      input:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      style="
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+      "
+    >
+      <div>
+        <h3>Warkop Senja Ipin</h3>
+      </div>
+
+      <ul
+        style="
+          display: flex;
+          list-style: none;
+          width: 20%;
+          justify-content: space-between;
+        "
+      >
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Order</a>
+        </li>
+        <li>
+          <a href="#">Promo</a>
+        </li>
+      </ul>
+      <div style="display: flex; align-items: center; margin-top: 10px">
+        <input type="search" placeholder="search" />
+        <a href="#">Cart (1)</a>
+      </div>
+    </nav>
+    <hr />
+
+    <div style="position: absolute; right: 50%; padding: 10px">
+      <a href="#">Home</a> > <a href="#">Menu</a> >
+      <p style="display: inline">Varian rasa</p>
+    </div>
+    <br />
+    <br />
+
+    <table style="display: flex; justify-content: center">
+      <form action="">
+        <tr>
+          <td style="width: 150px"></td>
+          <td rowspan="7" colspan="3" style="padding: 10px; overflow: hidden">
+            <img src="./img/coffee.jpg" alt="" width="400px" />
+          </td>
+          <td style="width: 50px"></td>
+          <td colspan="4">
+            <h4>WarkopSenja Web Developer</h4>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="4">IDR 19.9K</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="4">**** 3 ulasan</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="4">Pilih varian:</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Rasa</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <input
+              type="radio"
+              name="rasa"
+              style="transform: scale(1.5); width: 70px"
+            /><br />
+            <label for="rasa" style="font-size: 12px">Americano</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="rasa"
+              style="transform: scale(1.5); width: 70px"
+            /><br />
+
+            <label for="rasa" style="font-size: 12px">Espresso</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="rasa"
+              style="transform: scale(1.5); width: 70px"
+            /><br />
+
+            <label for="rasa" style="font-size: 12px">Cappuccino</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="rasa"
+              style="transform: scale(1.5); width: 70px"
+            /><br />
+
+            <label for="rasa" style="font-size: 12px">Caffe Latte</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Ukuran</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="padding: 10px">
+            <img src="./img/americano.jpg" alt="" width="100px" />
+          </td>
+          <td style="padding: 10px">
+            <img src="./img/cappucino.jpg" alt="" width="100px" />
+          </td>
+          <td style="padding: 10px">
+            <img src="./img/esspreso.jpg" alt="" width="100px" />
+          </td>
+          <td></td>
+          <td>
+            <input
+              type="radio"
+              name="ukuran"
+              style="transform: scale(1.5); width: 40px"
+            /><br />
+            <label for="ukuran" style="font-size: 12px">Small</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="ukuran"
+              style="transform: scale(1.5); width: 40px"
+            /><br />
+            <label for="ukuran" style="font-size: 12px">Medium</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="ukuran"
+              style="transform: scale(1.5); width: 40px"
+            /><br />
+            <label for="ukuran" style="font-size: 12px">Large</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td style="padding: 20px">
+            <button type="button">Pesan</button>
+          </td>
+          <td></td>
+
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </form>
+    </table>
+
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 600px;
+        margin: auto;
+        text-align: justify;
+      "
+    >
+      <h3 style="margin: 20px 0">Deskripsi Produk</h3>
+      <p style="font-size: 16px; font-weight: medium; justify-content: center">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus neque
+        eum perferendis maxime tenetur, porro deserunt magnam consequatur.
+        Similique, ipsa magni eum molestiae qui inventore, delectus nemo
+        voluptatem ullam voluptate aliquid quis? Molestias excepturi hic nisi,
+        consectetur praesentium vel iste, ex, sit aliquam consequatur placeat
+        laudantium dolorum accusamus quibusdam soluta alias eaque! Esse
+        reprehenderit quasi magnam animi, labore sed reiciendis, ipsa nesciunt
+        voluptatibus autem doloremque? Veniam, debitis hic vel nostrum amet
+        ratione magni at nobis porro id natus. Distinctio beatae recusandae
+        voluptatum dolorem esse fuga voluptatem sit alias magnam, quidem fugiat
+        atque hic nam dolore nemo, rem necessitatibus? Ea, quos.
+      </p>
+    </div>
+  </body>
+</html>
