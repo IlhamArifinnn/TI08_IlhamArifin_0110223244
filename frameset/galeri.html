@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+  </head>
+  <style>
+    table tr td img {
+      margin: 5px;
+      transition: 0.2s;
+      border-radius: 5px;
+    }
+
+    table tr td img {
+      cursor: pointer;
+    }
+
+    table tr td img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  <body>
+    <div
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <h3 style="text-align: center">Photo for Wallpaper</h3>
+      <table border="0">
+        <tr>
+          <td width="60">
+            <img src="img/foto1.jpg" alt="" width="80" />
+          </td>
+          <td width="60"><img src="img/foto2.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto3.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto4.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto6.jpg" alt="" width="80" /></td>
+        </tr>
+        <tr>
+          <td width="60"><img src="img/foto7.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto5.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto8.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto9.jpg" alt="" width="80" /></td>
+          <td width="60"><img src="img/foto10.jpg" alt="" width="80" /></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
