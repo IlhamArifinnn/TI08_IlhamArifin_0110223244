@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ccc;
+}
+#header {
+  background-color: burlywood;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header h1 {
+  color: blue;
+  text-align: center;
+  padding: 20px 5px 20px 5px;
+}
+
+#header blockquote {
+  background-color: yellow;
+  width: 60%;
+  text-align: center;
+  border: 2px dotted;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  margin: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu ul li {
+  display: inline;
+  text-align: center;
+  padding: 8px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+.gambar {
+  text-align: center;
+}
+
+.gambar img {
+  width: 200px;
+}
+
+.fp,
+#profil,
+#beternak,
+.promo {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+
+.fp::first-letter {
+  font-size: 45px;
+  color: blue;
+}
+
+#profil h3,
+#beternak h3 {
+  text-align: center;
+  color: tomato;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.koleksi {
+  text-align: center;
+  margin: 25px;
+}
+
+.koleksi img {
+  width: 150px;
+  padding: 8px;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+.promoin {
+  text-align: center;
+  margin: 20px;
+}
+.commerce {
+  margin: 20px;
+}
+
+.commerce ol {
+  list-style: none;
+}
+.commerce ol li a {
+  color: blue;
+  text-decoration: none;
+  align-items: center;
+}
