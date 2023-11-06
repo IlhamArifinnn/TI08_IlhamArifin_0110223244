@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kuning {
+  background-color:yellow;
+  width: 20%;
+  height: 100vh;
+  border:1px solid;
+}
+
+.merah {
+  background-color: tomato;
+  width: 20%;
+  height: 100vh;
+  border:1px solid;
+}
+
+.hijau {
+  background-color: lightgreen;
+  width: 20%;
+  height: 100vh;
+  border:1px solid;
+}
+
+.biru {
+  background-color: lightskyblue;
+  width: 20%;
+  height: 100vh;
+  border:1px solid;
+}

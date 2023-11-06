@@ -1,0 +1,61 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div {
+  width: 900px;
+  background-color: #ccc;
+  margin: auto;
+  border-radius: 5px;
+}
+header {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+header p {
+  cursor: pointer;
+  color: #ddd;
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 38%;
+  height: 400px;
+  font-size: 18px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn .simpan {
+  background-color: #2429d1;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn .batal {
+  background-color: #a63932;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}

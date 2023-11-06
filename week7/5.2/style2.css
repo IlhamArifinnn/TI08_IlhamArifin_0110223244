@@ -1,0 +1,34 @@
+.box{
+    border: 2px solid;
+}
+
+.hijau{
+    background-color: lightgreen;
+    width: 92%;
+    height: 200px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.kuning{
+    background-color: yellow;
+    width: 20%;
+    height: 300px;
+}
+
+.merah{
+    background-color: tomato;
+    width: 70%;
+    height: 300px;
+}
+.biru{
+    background-color: lightskyblue;
+    width: 70%;
+    height: 300px;
+}
+

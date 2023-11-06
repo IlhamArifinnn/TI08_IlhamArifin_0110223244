@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.box{
+    border: 2px solid;
+}
+
+.kuning{
+    background-color: yellow;
+    width: 18%;
+    height: 140px;
+}
+
+.merah{
+    background-color: tomato;
+    width: 75%;
+    height: 140px;
+}
+
+.hijau{
+    background-color: lightgreen;
+    width: 18%;
+    height: 600px;
+}
+.abu{
+    background-color: lightgray;
+    width: 54%;
+    height: 600px;
+}
+.biru{
+    background-color: lightskyblue;
+    width: 18%;
+    height: 600px;
+}
+
+.dongker {
+    background-color: blue;
+    width: 94%;
+    height: 130px;
+    margin: auto;
+}
