@@ -1,0 +1,44 @@
+body {
+  font-size: larger;
+  text-align: center;
+}
+
+header {
+  background-color: gold;
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+main {
+  display: flex;
+}
+
+main article {
+  width: 60%;
+  height: 80vh;
+  background-color: lightgray;
+  order: 1;
+  line-height: 80vh;
+}
+
+main nav {
+  background-color: #03dac5;
+  order: 3;
+  width: 20%;
+  line-height: 80vh;
+}
+
+main aside {
+  background-color: pink;
+  order: 2;
+  width: 20%;
+  line-height: 80vh;
+}
+
+footer {
+  background-color: gold;
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+}

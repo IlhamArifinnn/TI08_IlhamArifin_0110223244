@@ -1,0 +1,28 @@
+body {
+  background-color: #ccc;
+}
+
+.container {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.content1,
+.content2 {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.kotak {
+  border: 2px solid;
+  border-radius: 6px;
+  width: 100%;
+  height: 200px;
+}
+
+.kotak img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

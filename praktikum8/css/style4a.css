@@ -1,0 +1,51 @@
+body {
+  font-size: x-large;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.container .nav {
+  width: 20%;
+  height: 100vh;
+  background-color: lightpink;
+  line-height: 20vh;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+}
+
+.container .content .header {
+  background-color: gold;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.container .content .main {
+  display: flex;
+  height: 80vh;
+}
+
+.container .content .main .article {
+  width: 80%;
+  background-color: lightslategray;
+  line-height: 80vh;
+}
+
+.container .content .main .aside {
+  width: 20%;
+  background-color: aquamarine;
+  line-height: 80vh;
+}
+
+.container .content .footer {
+  background-color: gold;
+  height: 10vh;
+  line-height: 10vh;
+}
