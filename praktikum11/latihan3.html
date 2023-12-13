@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Mandiri3</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        min-width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #eaeaea;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="number"
+        id="jamMasuk"
+        min="1"
+        placeholder="masukan jam masuk"
+      />
+      <br />
+      <br />
+      <input
+        type="number"
+        id="jamKeluar"
+        min="1"
+        placeholder="masukan jam keluar"
+      />
+      <br />
+      <br />
+      <button id="bayar">Bayar</button>
+      <p>biaya yang harus dibayar: <span id="hasil"></span></p>
+    </div>
+    <script>
+      let masuk = document.getElementById("jamMasuk");
+      let keluar = document.getElementById("jamKeluar");
+      let bayar = document.getElementById("bayar");
+      let hasil = document.getElementById("hasil");
+
+      bayar.addEventListener("click", function () {
+        if (keluar.value - masuk.value <= 2) {
+          result = 3000;
+        } else {
+          result = 3000 + (keluar.value - masuk.value - 2) * 1000;
+        }
+        hasil.innerHTML = "Rp." + result;
+      });
+    </script>
+  </body>
+</html>

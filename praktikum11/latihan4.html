@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Mandiri4</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #eaeaea;
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="angka1" placeholder="masukan bilangan 1" />
+      <strong> + </strong>
+      <input type="number" id="angka2" placeholder="masukan bilangan 2" />
+      <p>=</p>
+      <input type="number" id="hasil" placeholder="hasil" />
+    </div>
+
+    <script>
+      let angka1 = document.getElementById("angka1");
+      let angka2 = document.getElementById("angka2");
+      let hasil = document.getElementById("hasil");
+
+      angka1.addEventListener("change", function () {
+        let value1 = parseFloat(angka1.value) || 0;
+        let value2 = parseFloat(angka2.value) || 0;
+        let hitung = value1 + value2;
+
+        hasil.value = hitung;
+      });
+
+      angka2.addEventListener("change", function () {
+        let value1 = parseFloat(angka1.value) || 0;
+        let value2 = parseFloat(angka2.value) || 0;
+        let hitung = value1 + value2;
+
+        hasil.value = hitung;
+      });
+    </script>
+  </body>
+</html>

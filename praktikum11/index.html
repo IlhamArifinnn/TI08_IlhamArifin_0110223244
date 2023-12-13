@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum</title>
+
+    <script>
+      function cariTeman() {
+        let frm = document.getElementById("frm_cari");
+        let str = frm.nama_cari.value;
+        alert("kata cari: " + frm.nama_cari.value);
+        document.getElementById("katacari").style = "color:blue";
+        console.log(str);
+
+        if (str == "ahmad") {
+          console.log("ahmad ketemu");
+        } else {
+          console.log("ini bukan ahmad");
+          document.getElementById("katacari").style = "color:red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form id="frm_cari" action="">
+      <h2>cari siswa:</h2>
+      <input type="text" name="nama_cari" size="30" />
+      <input type="button" value="Go" name="proses_cari" onclick="cariTeman" />
+    </form>
+    <div
+      style="
+        width: 300px;
+        border: 20px solid green;
+        padding: 20px;
+        margin: 20px;
+      "
+    >
+      <p>Nama yang anda cari: <span id="katacari"></span></p>
+    </div>
+  </body>
+</html>

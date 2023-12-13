@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Mandiri2</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #eaeaea;
+        width: 40%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Menghitung Kurs Rupiah</h1>
+      <input
+        type="number"
+        min="1"
+        name="money"
+        id="money"
+        placeholder="masukan angka"
+      />
+      <select name="kurs" id="kurs">
+        <option value="usd">USD | Rp.15000</option>
+        <option value="eur">EUR | Rp.16000</option>
+        <option value="sgd">SGD | Rp.11600</option>
+      </select>
+      <button id="hitung">Convert</button>
+      <p>hasil dalam Rp: <span id="hasil"></span></p>
+    </div>
+    <script>
+      let uang = document.getElementById("money");
+      let kurs = document.getElementById("kurs");
+      let hasil = document.getElementById("hasil");
+      let hitung = document.getElementById("hitung");
+
+      hitung.addEventListener("click", function () {
+        if (kurs.value == "usd") {
+          hasil.innerHTML = uang.value * 15000;
+        } else if (kurs.value == "eur") {
+          hasil.innerHTML = uang.value * 16000;
+        } else {
+          hasil.innerHTML = uang.value * 11600;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Mandiri1</title>
+    <style>
+      .body {
+        text-align: center;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #eaeaea;
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>menghitung luas dan keliling lingkaran</h1>
+      <p>panjang jari-jari <input type="number" id="jari" /></p>
+      <button id="hitung">hitung</button>
+      <p>luas: <span id="luas"></span></p>
+      <p>keliling: <span id="keliling"></span></p>
+    </div>
+    <script>
+      let jari = document.getElementById("jari");
+      let luas = document.getElementById("luas");
+      let keliling = document.getElementById("keliling");
+      const btn = document.getElementById("hitung");
+
+      btn.addEventListener("click", function () {
+        const phi = 3.14;
+        hitung1 = phi * (jari.value * jari.value);
+        hitung2 = 2 * phi * jari.value;
+
+        luas.innerHTML = hitung1;
+        keliling.innerHTML = parseFloat(hitung2);
+      });
+    </script>
+  </body>
+</html>
