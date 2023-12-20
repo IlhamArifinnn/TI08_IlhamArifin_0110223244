@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Mandiri 1</title>
+  </head>
+  <style>
+    body {
+      background-color: #eaeaea;
+      text-align: center;
+    }
+    .container {
+      background-color: beige;
+      border-radius: 8px;
+      border: 1px solid;
+      padding: 1.5rem;
+      width: 30%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <label for="username">username:</label>
+      <input type="text" id="username" />
+
+      <br /><br />
+
+      <label for="password">password:</label>
+      <input type="password" id="password" />
+      <br /><br />
+
+      <button onclick="login()">login</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

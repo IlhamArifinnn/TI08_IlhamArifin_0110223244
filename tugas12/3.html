@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Mandiri 3</title>
+    <style>
+      .container {
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px solid;
+        height: 60vh;
+        width: 90%;
+      }
+      .kotak-pesan {
+        margin: auto;
+        border: 1px solid;
+        text-align: start;
+        width: 90%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      #pesan {
+        width: 89%;
+        height: 30px;
+      }
+      #submit {
+        width: 10%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container"></div>
+    <div class="kotak-pesan">
+      <input
+        type="text"
+        id="pesan"
+        placeholder="Masukan pesan disini..."
+        required
+      />
+      <input type="submit" id="submit" value="Kirim" onclick="kirim()" />
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

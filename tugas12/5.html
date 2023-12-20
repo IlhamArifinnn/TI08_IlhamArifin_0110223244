@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Mandiri 5</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>form Validation</legend>
+      <form style="padding: 10px">
+        <label for="nama">nama</label>
+        <input type="text" id="nama" required maxlength="30" />
+
+        <br /><br />
+
+        <label for="email">email</label>
+        <input type="email" id="email" required />
+
+        <br /><br />
+
+        <label for="jam">jam</label>
+        <input type="time" id="jam" required />
+
+        <br /><br />
+
+        <label for="tujuan">tujuan</label>
+        <input type="text" id="tujuan" required />
+
+        <br /><br />
+
+        <label for="tiket">tiket</label>
+        <input type="number" id="tiket" min="1" max="10" />
+        <br /><br />
+        <button type="submit">submit</button>
+      </form>
+    </fieldset>
+    <div>
+      <p>nama: <span id="hasil_nama"></span></p>
+      <p>email: <span id="hasil_email"></span></p>
+      <p>jam: <span id="hasil_jam"></span></p>
+      <p>tujuan: <span id="hasil_tujuan"></span></p>
+      <p>tiket: <span id="hasil_tiket"></span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>praktikum 12</title>
+  </head>
+  <body>
+    <h1>Kalkulator Sederhana</h1>
+    <form action="">
+      <label for="">Bilangan 1:</label>
+      <input type="number" name="angka1" id="angka1" />
+      <br /><br />
+      <label for="">Pilih Operator</label>
+      <select name="" id="operator">
+        <option value="tambah">+</option>
+        <option value="kurang">-</option>
+        <option value="kali">*</option>
+        <option value="bagi">/</option>
+      </select>
+      <br /><br />
+      <label for="">Bilangan 2:</label>
+      <input type="number" name="angka2" id="angka2" />
+      <button type="button" onclick="hitung()">hitung</button>
+      <p>hasil: <span id="hasil"></span></p>
+    </form>
+
+    <script>
+      function hitung() {
+        let angka1 = document.getElementById("angka1").value;
+        let angka2 = document.getElementById("angka2").value;
+        let operator = document.getElementById("operator").value;
+        let hasil = document.getElementById("hasil");
+
+        if (operator == "tambah") {
+          hasil.innerHTML = parseInt(angka1) * parseInt(angka2);
+        }
+        if (operator == "kurang") {
+          hasil.innerHTML = parseInt(angka1) - parseInt(angka2);
+        }
+        if (operator == "kali") {
+          hasil.innerHTML = parseInt(angka1) * parseInt(angka2);
+        }
+        if (operator == "bagi") {
+          hasil.innerHTML = parseInt(angka1) / parseInt(angka2);
+        }
+      }
+    </script>
+  </body>
+</html>

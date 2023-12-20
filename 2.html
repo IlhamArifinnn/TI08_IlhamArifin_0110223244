@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>praktikum 12</title>
+  </head>
+  <body>
+    <div
+      style="
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <input
+        type="button"
+        value="ubah warna"
+        onclick="ubahWarna()"
+        style="font-size: 30px; border-radius: 10px"
+      />
+    </div>
+    <script>
+      function ubahWarna() {
+        let warna = [
+          "tomato",
+          "khaki",
+          "violet",
+          "pink",
+          "grey",
+          "beige",
+          "green",
+          "lightyellow",
+          "brown",
+          "lightseagreen",
+        ];
+        let acak = Math.round(Math.random() * 10);
+
+        document.body.style.backgroundColor = warna[acak];
+      }
+    </script>
+  </body>
+</html>
