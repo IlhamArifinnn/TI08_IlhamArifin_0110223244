@@ -17,29 +17,8 @@ function konversi(){
     let valas = document.getElementById('valas').value
     let hasil = document.getElementById('hasil')
 
-    if (valas == 'dollar_us'){
-        hasil.innerHTML = nilai * 9915 
-    }
-    if (valas == 'dollar_sin'){
-        hasil.innerHTML = nilai * 13472
-        
-    }
-    if (valas == 'ringgit'){
-        hasil.innerHTML = nilai * 874
-    }
+    hasil.innerHTML = nilai * valas
     
-    if (valas == 'yen'){
-        hasil.innerHTML = nilai * 120
-        
-    }
-    if (valas == 'euro'){
-        hasil.innerHTML = nilai * 15888
-        
-    }
-    if (valas == 'riyal'){
-        hasil.innerHTML = nilai * 3592
-
-    }
 }
 
 // 3. 
