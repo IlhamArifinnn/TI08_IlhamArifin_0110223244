@@ -4,7 +4,8 @@ function login(){
     let password = document.getElementById('password').value
 
     if(username === 'ahmad2017' && password === 'integrity'){
-        return  document.body.innerHTML = '<h1>Login Sukses</h1>'
+        // return  document.body.innerHTML = '<h1>Login Sukses</h1>'
+        window.location = 'login success.html'
     }
     else {
         return alert('Login Gagal')
